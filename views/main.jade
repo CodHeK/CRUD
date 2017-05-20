@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title MainPage
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+  body
+    .container
+      h2 Blogs !
+      hr
+      a.btn.btn-primary(href='/posts') Create a new Blog !
+      br
+      br
+      table.table.table-striped
+        tr
+          th Title
+          th Author
+          th Blog ID
+        tr
+          td posts.author
+          td posts.title
+          td posts.id

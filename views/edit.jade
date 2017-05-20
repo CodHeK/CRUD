@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title Post
+    link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+  body
+    .container
+      form(method='POST')
+        .form-group
+          h2 Edit your Blog !
+          hr
+          label Author:
+          input.form-control(type='text', placeholder="Writer's name ...", name='author')
+          br
+          label Title :
+          input.form-control(type='text', placeholder="Enter your blog's title...", name='title')
+          br
+          label Content :
+          textarea.form-control(rows='10', cols='10', placeholder='Enter body of your blog...', name='content')
+          br
+          input.btn.btn-primary(type='submit', value='Save Changes')
